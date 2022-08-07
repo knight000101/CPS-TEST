@@ -4,83 +4,118 @@
 }
 
 html, body{
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
 }
 body{
-    background:radial-gradient(circle at 50% 60%, #BE63F9, #F5E6FE);
+    background:linear-gradient(circle at 50% 60%, #c475f9, #F5E6FE);
     background-attachment: fixed;
 }
-p, h1, div{
-    font-family: Verdana, sans-serif;
+ p, div{
+    font-family: 'Montserrat', sans-serif;
     position: relative;
-    color:#6122A5;
+    color:#333333;
     text-align: center;
     
 }
 h1{
-    font-size:4em;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color:#333333;
+    text-align: center;
+    font-size:2em;
     text-shadow: 2.5px 3px 2px #DCA6FF;
 }
-p{
-    position: relative;
-    padding-top: 40px;
-    height: 46px;
-    width: 280px;
+p{ position: relative;
+    height: 60px;
+    width:150px;
+    background-color: #f9f6fb;
+  
+    box-shadow: 3px 3px 3px 3px #eacefc, -2px -2px 2px 2px #e5c4fd;
+   
     border-radius: 15px;
-    background:linear-gradient(to bottom right, #F5E6FE, #E7C0FF), linear-gradient(to top left, #F5E6FE, #E7C0FF);
-    font-size: 2.5em;
-    margin: 0 auto;
-    text-shadow: 2.5px 3px 2px #B089CA;
+    line-height:60px;
+    font-size:1.6em;
+    margin: 20px ;
+    margin-left: 190px;
+    
+    user-select: none;
+    
+    top:10px;
+    display:inline-block;
+    text-align: center;
 }
 
-.divClick{
+
+.btn {
     position: relative;
-    height: 400px;
-    width: 800px;
-    background:linear-gradient(to bottom right, #6D77F6, #A762F0), linear-gradient(to top left, #6122A5, #A762F0);
-    margin: 0 auto;
-    font-size: 2.6em;
-    user-select: none;
-    line-height: 400px;
+    background:linear-gradient(to bottom right, #A762F0, #6122A5), linear-gradient(to top left, #6122A5, #A762F0);
+    height: 300px;
+    width: 300px;
     box-shadow: 20px 20px 20px  #888888;
-    border-radius: 30px;
-    touch-action: manipulation;
-    text-shadow: 2.5px 3px 2px #DCA6FF;
-}
+    border-radius: 50%;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 2em;
+    user-select: none;
+    line-height: 300px;
+    margin: 0 auto;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 45px;
+  }
+  
+  .btn:hover {opacity: 0.6}
+  .second{
+    font-size: 30px;
+    height: 60px;
+    width:150px;
+    background-color: #f9f6fb;
+  
+    box-shadow: 3px 3px 3px 3px #eacefc, -2px -2px 2px 2px #e5c4fd;
+   
+    border-radius: 15px;
+    line-height:60px;
+    font-size:1.6em;
+    margin: 20px 2px;
+    margin: auto;
+    user-select: none;
+    
+    top:10px;
+    
+    text-align: center;
+  }
+
 .time{
     position: relative;
     height: 60px;
     width:200px;
-    background-color: #b64dfd;
-    border-bottom: solid #A00EFF 5px;
-    border-right: solid #A00EFF 5px;
+    background-image: linear-gradient(to right, #ffffff 0%, #f6ecfd 30%, #ffffff 100%);
+    
+    box-shadow: 3px 3px 3px 3px #edd2ff, -2px -2px 2px 2px #edd2ff;
     line-height:60px;
     font-size:1.6em;
-    margin: 20px 2px;
+    margin: 40px 10px;
     user-select: none;
     border-radius: 15px;
     top:10px;
     display:inline-block;
 }
+.bx-timer{
+    line-height:60px;
+    size: 35px;
+   
+}
+
 a{
     text-decoration: none;
-    color:white;
+    color:#b34afe;
 }
-*{
-    right:100vw;
-    animation-name: lancement;
-    animation-duration:2s;
-    animation-fill-mode: forwards;
-}
-@keyframes lancement{
-    from{
-        right:100vw;
-    }
-    to{
-        right:0vw;
-    }
-}
+
+
 @media all and (max-width:900px){
     .divClick{
         width:600px;
