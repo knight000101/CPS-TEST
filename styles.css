@@ -66,6 +66,7 @@ p{ position: relative;
     transition: 0.3s;
     cursor: pointer;
     margin-top: 45px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
   
   .btn:hover {opacity: 0.6}
